@@ -1,0 +1,385 @@
+/*  Спецификация  */
+@font-face {
+	font-family: 'GillSans';
+	src: url('../fonts/GillSansMT.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/GillSansMT.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/GillSansMT.woff') format('woff'), /* Pretty Modern Browsers */
+		url('../fonts/GillSansMT.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/GillSansMT.svg') format('svg'); /* Legacy iOS */
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'GillSans';
+	src: url('../fonts/GillSansMT-Bold.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/GillSansMT-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/GillSansMT-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+		url('../fonts/GillSansMT-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/GillSansMT-Bold.svg') format('svg'); /* Legacy iOS */
+	font-weight: 700;
+}
+
+body {
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'GillSans';
+}
+
+button,
+button:hover,
+button:focus {
+	outline: none;
+	border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	color: #26272d;
+}
+
+h4 {
+	font-size: 12px;
+	color: #26272d;
+	line-height: 2.4em;
+}
+
+p {
+	color: #92969c;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.btn-blue {
+	border-radius: 100px;
+	background-color: #267df4;
+	color: #fff;
+	display: block;
+	transition: all 0.5s ease;
+}
+
+.btn-blue:hover {
+	background: #267cf4ae;
+	color: #fff;
+	box-shadow: 0 8px 20px rgba(26, 14, 92, 0.25);
+    transition: all 0.5s ease;
+}
+
+.btn-blue:active {
+	background: #267df4;
+	box-shadow: none;	
+    transition: all 0.5s ease;
+}
+
+.btn-black {
+	border-radius: 100px;
+	color: #26272d;
+    border: #26272d 1px solid;
+	display: block;
+	transition: all 0.5s ease;
+}
+
+.btn-black:hover {
+	background: #26272d;
+	color: #fff;
+	box-shadow: 0 8px 20px rgba(4, 3, 12, 0.25);
+    transition: all 0.5s ease;
+}
+
+.btn-black:active {
+	background: #17171b;
+	box-shadow: none;	
+    transition: all 0.5s ease;
+}
+
+.app-screen, .design-img {
+	transition: all 0.5s ease;
+}
+
+section:hover .app-screen,
+header:hover .app-screen,
+section:hover .design-img {
+	transform: scale(1.02) ;
+	-webkit-transform: scale(1.02) ;
+	-moz-transform: scale(1.02) ;
+}
+
+@media (min-width: 1400px) {
+	.container {
+		max-width: 1100px;
+		padding: 0;
+	}
+}
+
+/* ----- Header ----- */
+
+.header {
+    background: url(../img/Backgraund.png) no-repeat center top / cover;
+	padding: 44px 0 507px;
+	position: relative;
+}
+
+.header-top {
+    margin-bottom: 108px;
+}
+
+.menu--right {
+	margin-right: 34px;
+}
+
+.menu__item {
+	margin-right: 41px;
+}
+
+.menu__item:last-child {
+	margin-right: 0;
+}
+
+.menu__link {
+    color: #26272d;
+    font-size: 16px;
+    justify-content: space-between;
+    font-weight: 700;
+	transition: color 0.6s ease;
+	letter-spacing: -0.05em;
+}
+
+.menu__link:hover {
+	color: #8c8f94;
+}
+
+.header__button {
+	position: relative;
+	padding: 6px 27px 6px 51px;
+	text-align: center;
+}
+
+.header__button::before {
+	content: url(../img/Apple_Icon.svg);
+	position: absolute;
+	top: 9px;
+    left: 17px;
+}
+
+.header__button a {
+    font-size: 16px;
+	color: #fff;
+}
+
+.header__button-before::before {
+    content: url(../img/Apple_Icon.svg);
+}
+
+.happens {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+	display: flex;
+}
+
+.happens__title {
+	margin-bottom: 32px;
+	line-height: 1.16em;
+	font-size: 62px;
+}
+
+.happens__text {
+    max-width: 821px;
+	margin-bottom: 61px;
+	line-height: 1.4em;
+}
+
+.happens__button a {
+    width: 205px;
+    height: 50px;
+    padding: 9px 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.happens__button a::before {
+    content: url(../img/Play_Icon.svg);
+}
+
+.happens__phone {
+	position: absolute;
+	bottom: 0px;
+}
+
+/* ----- Day ------ */
+
+.day {
+    padding: 127px 0 0;
+}
+
+.exposition {
+    margin-bottom: 70px;
+}
+
+.exposition__item {
+    margin-bottom: 36px;
+}
+
+.exposition__title {
+    margin-bottom: 32px;
+	line-height: 1.3em;
+	letter-spacing: -1px;
+}
+
+.exposition__text {
+    margin-bottom: 24px;
+	width: 514px;
+    letter-spacing: 1px;
+    font-size: 18px;    
+}
+
+.screen {
+	margin-left: -132px;
+    position: absolute;
+    margin-top: -21px;
+}
+
+.protected {
+    padding: 10px 0 97px 87px;	
+	position: relative;
+
+}
+
+.protected__title {
+    margin-bottom: 70px;
+	font-size: 42px;
+}
+
+.protected__text {
+    margin-bottom: 75px;
+	line-height: 1.4em;
+}
+
+.protected__text-bottom {
+    margin-bottom: 26px;
+}
+
+.protected__link-blue {
+    margin-right: 20px;
+    padding: 9px 80px 9px 27px;
+    position: relative;
+    font-size: 16px;
+	display: flex;
+    align-items: center;
+}
+
+
+.protected__link-black {
+	padding: 7px 33px;
+	font-size: 16px;
+	display: flex;
+    align-items: center;
+}
+
+.protected__link-blue::after {
+    content: url(../img/Arrow_Icon.svg);
+	position: absolute;
+	top: 11px;
+    right: 18px;
+}
+
+/* --------- Everywhere --------- */
+
+.everywhere {
+	padding: 150px 0 155px;
+}
+
+.element {
+	margin: 0 71px 69px -19px;
+}
+
+.element__title { 
+	margin-bottom: 59px;
+	max-width: 300px;
+	font-size: 42px;
+	line-height: 1.2em;
+}
+
+.element__text {
+	width: 478px;
+	line-height: 1.4em;
+	margin-bottom: 57px;
+}
+
+.element__text-margin { 
+	margin-bottom: 29px;
+}
+
+.par { 
+	font-size: 12px;
+	font-weight: 700;
+	margin-bottom: 31px;
+	padding-left: 0;
+	color: #26272d;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.partners__dropbox { 
+	margin-right: 31px;
+}
+
+.map { 
+	padding-top: 34px;
+	margin-left: 23px;
+}
+
+.map__item {
+	max-width: 627px;
+}
+
+/* -------- Footer ---------- */
+
+
+.footer {
+	padding: 23px 0 230px;
+}
+
+.footer-logo { 
+	margin-bottom: 26px;
+}
+
+.answer { 
+	font-size: 14px;
+	color: #8c8f94;
+	margin-bottom: 22px;
+	max-width: 232px;
+	line-height: 1.7em;
+}
+
+.learn { 
+	margin-bottom: 12px;
+	margin-top: -8px;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1.2px;
+}
+
+.choice { }
+
+.choice__item { 
+	margin-bottom: 12px;
+	font-size: 16px;
+	color: #8c8f94;
+}
+
+.about { }
+
+.support { }
+
