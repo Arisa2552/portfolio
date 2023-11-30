@@ -138,6 +138,12 @@ section:hover .design-img {
 	margin-right: 34px;
 }
 
+.menu-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+}
+
 .menu__item {
 	margin-right: 41px;
 }
@@ -371,15 +377,180 @@ section:hover .design-img {
 	letter-spacing: 1.2px;
 }
 
-.choice { }
-
 .choice__item { 
 	margin-bottom: 12px;
 	font-size: 16px;
 	color: #8c8f94;
 }
 
-.about { }
 
-.support { }
+
+@media (max-width: 1200px) {
+	.menu-wrap {
+		flex-direction: row;
+	}
+
+	.header__button {
+		padding: 6px 16px 6px 44px;
+	}
+
+	.screen {
+		opacity: 1;
+		margin-left: -160px;
+	}
+
+	.map__item {
+		max-width: 490px;
+	}
+}
+
+@media (max-width: 998px) {
+
+/* -----media HEADER ------ */
+
+	.header {
+		padding: 23px 0 357px;
+	}
+
+	.header-top {
+		margin-bottom: 50px;
+	}
+
+	.menu {
+		justify-content: center;
+		margin-bottom: 10px;
+	}
+
+	.menu-wrap {
+		flex-direction: column;
+	}
+
+	.logo {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 10px;
+	}
+
+	.happens__title {
+		font-size: 30px;
+	}
+	
+	.happens__text {
+		max-width: 300px;
+	}
+
+	.phone {
+		width: 300px;
+		height: 329px;
+	}
+
+	/* -----media Day ------ */
+
+	.day {
+		padding: 35px 0 0 0;
+	}
+	
+	.exposition {
+		margin-bottom: 35px;
+	}
+
+	.exposition-wrap {
+		display: flex;
+		align-items: center;
+	}
+
+	.exposition__item {
+		margin-right: 30px;
+	}
+
+	.exposition__text {
+		width: auto;
+	}
+
+	.screen {
+    width: 500px;
+    height: 500px;
+		margin-left: -205px;
+		opacity: 0.3;
+	}
+
+	.protected {
+		padding: 0;
+	}
+
+	.protected__title {
+		margin-bottom: 35px;
+		font-size: 30px;
+	}
+
+	.protected__text {
+		margin-bottom: 35px;
+	}
+
+	.protected__button  {
+		flex-direction: column;
+    align-items: flex-start;
+	}
+
+	.protected__link-blue {
+		margin-bottom: 20px;
+		padding: 9px 46px 9px 27px;
+	}
+	/* ----- media everywhere ------ */
+
+
+	.everywhere {
+		padding: 35px 0 35px;
+	}
+
+	.element {
+		margin: 0 0 11px 0;
+	}
+
+	.element__title {
+		font-size: 30px;
+		margin-bottom: 35px;
+		max-width: max-content;
+	}
+
+	.element__text {
+		width: auto;
+		margin-bottom: 35px;
+	}
+
+	.map {
+		margin-left: 0;
+	}
+
+	.map__item {
+		max-width: 400px;
+	}
+
+	/* ----- media footer ------ */
+
+	.footer {
+		padding: 23px 0 35px;
+		text-align: center;
+	}
+
+	.answer-wrap {
+		margin-bottom: 25px;
+	}
+
+	.answer {
+		max-width: max-content;
+	}
+
+	.choice {
+		margin-bottom: 25px;
+	}
+
+	.choice__item {
+		margin-bottom: 8px;
+	}
+
+	.learn {
+		margin-bottom: 0;
+	}
+}
 
