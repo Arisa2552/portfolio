@@ -134,6 +134,7 @@ section:hover .design-img {
     margin-bottom: 108px;
 }
 
+
 .menu--right {
 	margin-right: 34px;
 }
@@ -386,6 +387,12 @@ section:hover .design-img {
 
 
 @media (max-width: 1200px) {
+
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
 	.menu-wrap {
 		flex-direction: row;
 	}
@@ -416,6 +423,115 @@ section:hover .design-img {
 		margin-bottom: 50px;
 	}
 
+  
+  
+  /* ----------------------BURGER------------- */
+
+  #burger-menu {
+    cursor: pointer;
+    height: 27px;
+    width: 27px;
+    margin: 0px 0 50px 50px;
+    overflow: visible;
+    position: relative;
+    z-index: 2;
+  }
+
+  .bodyoverlow {
+    overflow-y: hidden;
+  }
+
+  #burger-menu span,
+  #burger-menu span:before,
+  #burger-menu span:after {
+    background: #000;
+    display: block;
+    height: 2px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+  }
+  #burger-menu span:before,
+  #burger-menu span:after {
+    content: "";
+  }
+  #burger-menu span:before {
+    left: 0px;
+    top: -10px;
+    width: 27px;
+  }
+  #burger-menu span {
+    right: 0px;
+    top: 13px;
+    width: 27px;
+  }
+  #burger-menu span:after {
+    left: 0px;
+    top: 10px;
+    width: 27px;
+  }
+
+  #burger-menu.close span, #burger-menu.close span:before, #burger-menu.close span:after{
+    background: #fff;
+  }
+
+  #burger-menu.close span:before {
+    top: 0px;
+    transform: rotate(90deg);
+    width: 27px;
+  }
+  #burger-menu.close span {
+    transform: rotate(-45deg);
+    top: 13px;
+    width: 27px;
+  }
+  #burger-menu.close span:after {
+    top: 0px;
+    left: 0;
+    transform: rotate(90deg);
+    opacity: 0;
+    width: 0;
+  }
+  
+  #menu {
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    left: -200vw;
+    top: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #menu.open {
+    left: 0;
+    margin-left: -30px;
+  }
+
+  #menu.overlay {
+    visibility: visible;
+    opacity: 1;
+    padding-top: 100px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  #menu ul {
+    padding: 0;
+  }
+  #menu li {
+    list-style: none;
+  }
+  #menu a {
+    color: #fff;
+    display: block;
+    font-size: 32px;
+    text-decoration: none;
+  }
+
 	.menu {
 		justify-content: center;
 		margin-bottom: 10px;
@@ -425,10 +541,12 @@ section:hover .design-img {
 		flex-direction: column;
 	}
 
+  .menu--right {
+    margin-right: 0;
+  }
+
 	.logo {
-		display: flex;
-		justify-content: center;
-		margin-bottom: 10px;
+		display: none;
 	}
 
 	.happens__title {
@@ -553,4 +671,3 @@ section:hover .design-img {
 		margin-bottom: 0;
 	}
 }
-
